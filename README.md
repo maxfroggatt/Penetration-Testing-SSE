@@ -1,8 +1,24 @@
+<div align="center">
+
 # Authorised Redis Security Assessment
 
-A sanitised case study of an authorised penetration test conducted in an isolated university lab. The assessment identified an exposed Redis service that accepted unauthenticated connections and permitted dangerous configuration changes.
+**A sanitised case study of an authorised Redis penetration test conducted in an isolated university lab.**
 
-The repository focuses on the assessment process, the security impact, and practical remediation. Real credentials, addresses, flags, and institution-specific material have been removed.
+![Redis](https://img.shields.io/badge/Redis-Security_Assessment-DC382D?logo=redis&logoColor=white)
+![Python](https://img.shields.io/badge/Python-Standard_Library-3776AB?logo=python&logoColor=white)
+![Testing](https://img.shields.io/badge/Testing-Authorised_Only-2E8B57)
+
+[Assessment report](docs/assessment-report.md) | [Python utility](src/vigenere_analysis.py) | [Tests](tests/test_vigenere_analysis.py)
+
+</div>
+
+## Overview
+
+The assessment identified an exposed Redis service that accepted unauthenticated connections and permitted dangerous configuration changes.
+
+This repository focuses on the assessment process, security impact and practical remediation. Real credentials, addresses, flags and institution-specific material have been removed.
+
+> All testing was conducted within an isolated and authorised university environment.
 
 ## Project highlights
 
@@ -17,7 +33,7 @@ The repository focuses on the assessment process, the security impact, and pract
 
 | Finding | Risk | Impact |
 |---|---|---|
-| Unauthenticated Redis administration | Critical | An unauthorised user could alter data and configuration and potentially write files with the Redis service account's permissions |
+| Unauthenticated Redis administration | **Critical** | An unauthorised user could alter data and configuration and potentially write files with the Redis service account's permissions |
 
 The complete sanitised finding is available in [docs/assessment-report.md](docs/assessment-report.md).
 
